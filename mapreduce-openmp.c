@@ -133,7 +133,7 @@ int main()
     printArrayInt(count);
     printf("\n");
 
-    printf("total number of characters: %d", red2);
+    printf("total number of characters: %d", red2(count));
 
 
     return 0;
