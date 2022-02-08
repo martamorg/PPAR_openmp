@@ -109,6 +109,7 @@ int red2 (int *count){
 
 int main()
 {
+    omp_set_num_threads(4);
 
     // init
     char *array[NB_WORDS];

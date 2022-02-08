@@ -70,6 +70,7 @@ void computePlace2Cars(int * place2Cars, struct Car cars [NB_CARS]){
 
 void computeArrays(struct Car cars [NB_CARS], int * place2Cars, int * stoppedCars, int * merged){
 
+    omp_set_num_threads(4);
     #pragma omp parallel for
     for (int i=0; i<NB_CARS; i++){
         if(cars[i].place == 2){
